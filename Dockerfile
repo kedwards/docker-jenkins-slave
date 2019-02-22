@@ -3,7 +3,7 @@ FROM debian:latest
 MAINTAINER Kevin Edwards "<kedwards@kevinedwards.ca>"
 
 RUN apt-get -q update && \
-    apt-get install -y openssh-server openjdk-8-jre-headless && \
+    apt-get install -y openssh-server git openjdk-8-jre-headless && \
     apt-get -q autoremove && \
     apt-get -q clean -y && \
 	rm -rf /var/lib/apt/lists/* && \
@@ -13,9 +13,6 @@ RUN apt-get -q update && \
 
 RUN useradd -m -d /home/jenkins -s /bin/sh jenkins && \
     echo "jenkins:jenkins" | chpasswd
-
-#RUN apk -v --no-cache --update add openjdk8 && \
-#	rm -rf /var/cache/apk/*
 
 EXPOSE 22
 
