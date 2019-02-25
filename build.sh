@@ -34,7 +34,7 @@ done
 
 shift $(($OPTIND - 1))
 
-trap show_help INT EXIT
+trap show_help INT
 
 docker build --no-cache -t "kevinedwards/${NAME}:${VERSION}" ${SCRIPT_DIR} && \
 docker image tag "kevinedwards/${NAME}:${VERSION}" "kevinedwards/${NAME}:latest"
