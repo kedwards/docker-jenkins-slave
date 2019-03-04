@@ -1,2 +1,2 @@
 # docker-jenkins-slave
-A generic jenkins slave image wrapped in a docker container
+A rubyied version, based off the generic jenkins slave image wrapped in a docker container
