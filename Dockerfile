@@ -4,7 +4,7 @@ LABEL maintainer="Kevin Edwards <kedwards@kevinedwards.ca>"
 
 ENV BUILD_PACKAGES "openrc openssh"
 
-ENV APP_PACKAGES ""
+ENV APP_PACKAGES "php5"
 
 RUN apk -v --no-cache --update add \
     $BUILD_PACKAGES \
