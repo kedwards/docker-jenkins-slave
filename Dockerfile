@@ -2,7 +2,7 @@ FROM java:openjdk-8-alpine
 
 LABEL maintainer="Kevin Edwards <kedwards@kevinedwards.ca>"
 
-ENV BUILD_PACKAGES "openrc openssh bash iptables ca-certificates e2fsprogs docker"
+ENV BUILD_PACKAGES "openrc openssh bash git iptables ca-certificates e2fsprogs docker"
 
 ENV APP_PACKAGES "ruby"
 
