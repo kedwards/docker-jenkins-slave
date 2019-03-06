@@ -4,7 +4,7 @@ LABEL maintainer="Kevin Edwards <kedwards@kevinedwards.ca>"
 
 ENV BUILD_PACKAGES "openrc openssh bash iptables ca-certificates e2fsprogs docker"
 
-ENV APP_PACKAGES "openjdk8"
+ENV APP_PACKAGES ""
 
 RUN apk -v --no-cache --update add \
     $BUILD_PACKAGES \
