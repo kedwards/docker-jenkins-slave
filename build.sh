@@ -5,13 +5,15 @@ set -Eeo pipefail
 OPTS=':n:v:'
 SCRIPT_NAME=$(basename $(readlink -nf $0) ".sh")
 SCRIPT_DIR=$(dirname $(readlink -f "$0"))
+NAME=jenkins-slave
+VERSION=latest
 
 show_help()
 {
     cat << EOF
 Usage: ${SCRIPT_NAME}.sh -n <image_name> -v <image_version> [-h]
 Run the installer, with following options:
-  -n  image name
+  -n  image name [default: jenkins-slave]
   -v  image version
   -h  display help
 
